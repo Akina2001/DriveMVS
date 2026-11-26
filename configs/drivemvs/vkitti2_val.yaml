@@ -1,0 +1,8 @@
+!!python/object:mvsanywhere.options.DataOptions
+dataset: vkitti
+dataset_path: data/vkitti2
+tuple_info_file_location: data_splits/drivemvs/vkitti2/
+dataset_scan_split_file: data_splits/drivemvs/vkitti2/val_scans.txt
+mv_tuple_file_suffix: _eight_view_deepvmvs_clip6.txt
+frame_tuple_type: dense_offline
+split: val

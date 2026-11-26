@@ -1,0 +1,38 @@
+!!python/object:mvsanywhere.options.Options
+# DriveMVS, ViT-B. Trained on clips of 6 frames, one clip per GPU.
+name: drivemvs_vitb
+model_type: depth_model
+feature_volume_type: view_agnostic_mlp_feature_volume
+cost_volume_aggregation: dot
+cv_encoder_type: vit_encoder
+depth_decoder_name: dptt
+image_encoder_name: dinov2_vitb14
+matching_encoder_type: resnet
+loss_type: log_l1
+use_prompts: true
+depth_range_mode: auto
+batch_size: 1
+val_batch_size: 1
+gpus: 8
+num_workers: 8
+precision: 16
+random_seed: 0
+image_width: 640
+image_height: 480
+val_image_width: 640
+val_image_height: 480
+matching_scale: 0.25
+prediction_scale: 1.0
+prediction_num_scales: 4
+model_num_views: 8
+num_images_in_tuple: 8
+lr: 0.0001
+lr_da_encoder: 0.000005
+lr_da_decoder: 0.00005
+wd: 0.0001
+accumulate_grad_batches: 2
+max_steps: 4000
+lr_steps: [2800, 3600]
+log_interval: 50
+val_interval: 500
+num_sanity_val_steps: 0

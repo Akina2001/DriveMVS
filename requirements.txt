@@ -1,0 +1,22 @@
+# Versions DriveMVS was developed and tested with (Python 3.12, CUDA 12.x).
+# kornia must stay at 0.6.7 and OpenCV below 5 (5.x cannot read EXR depth maps).
+torch==2.8.0
+torchvision==0.23.0
+xformers==0.0.32.post1
+lightning==2.6.6
+kornia==0.6.7
+opencv-python-headless==4.11.0.86
+numpy==2.2.6
+timm==1.0.31
+einops==0.8.2
+antialiased-cnns==0.3
+loguru==0.8.0
+pandas
+h5py
+scipy
+matplotlib
+pillow
+pyyaml
+tensorboard
+tqdm
+pytest

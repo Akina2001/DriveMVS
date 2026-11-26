@@ -1,0 +1,8 @@
+!!python/object:mvsanywhere.options.DataOptions
+dataset: mvssynth
+dataset_path: data/mvssynth
+tuple_info_file_location: data_splits/drivemvs/mvssynth/
+dataset_scan_split_file: data_splits/drivemvs/mvssynth/val_scans.txt
+mv_tuple_file_suffix: _eight_view_deepvmvs_clip6.txt
+frame_tuple_type: dense_offline
+split: val
